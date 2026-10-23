@@ -35,7 +35,7 @@ def compress_image_sklearn(
     n_init=N_INIT,
     algorithm=ALGORITHM
 ):
-    """Compress an RGB image using K-Means clustering."""
+    """Compress an RGB image"""
 
     # Ensure image has three color channels
     if len(image_array.shape) == 2:
@@ -141,7 +141,7 @@ def create_download_data(image_array):
 
 def main():
 
-    st.title("🖼️ Image Compression Using K-Means Clustering")
+    st.title("🖼️ Image Compressor")
 
     st.markdown(
         "Upload an image and reduce its number of colors "
